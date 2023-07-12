@@ -1,0 +1,75 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.heading {
+  background-color: green;
+  color: white;
+}
+
+directory_list {
+    padding: 0;
+    border-spacing: 0.1rem;
+    border-collapse: collapse;
+    display: table;
+}
+
+file {
+    border-spacing: 0.4rem;
+    padding: 0.5rem;
+    display: table-row;
+}
+
+filename {
+    vertical-align: left;
+    border-spacing: 0.4rem;
+    padding: 0.5rem;
+    display: table-cell;
+}
+
+type {
+    text-align: middle;
+    border-spacing: 0.4rem;
+    padding: 0.5rem;
+    display: table-cell;
+}
+
+size {
+    text-align: right;
+    border-spacing: 0.4rem;
+    padding: 0.5rem;
+    display: table-cell;
+}
+
+atime {
+    vertical-align: middle;
+    border-spacing: 0.4rem;
+    padding: 0.5rem;
+    display: table-cell;
+}
+
+mtime {
+    vertical-align: middle;
+    border-spacing: 0.4rem;
+    padding: 0.5rem;
+    display: table-cell;
+}
+
+ctime {
+    vertical-align: middle;
+    border-spacing: 0.4rem;
+    padding: 0.5rem;
+    display: table-cell;
+}
+
+birthtime {
+    vertical-align: middle;
+    border-spacing: 0.4rem;
+    padding: 0.5rem;
+    display: table-cell;
+}
+
+directory {
+    color: blue;
+    text-decoration: underline;
+}

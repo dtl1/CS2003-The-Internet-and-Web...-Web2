@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=stylesheet href="page.css" type="text/css">
+        <script src="dir_list_client.js"></script>
+        
+        <title>
+            Directory Lister (Remote File System Browser)
+        </title>
+
+        <h1>
+            Directory Lister (Remote File System Browser)
+        </h1>
+        
+    </head>
+    <body>
+        <p>
+            Retreived directory: <label id="dirName">???</label>
+        </p>
+
+        <button onclick="prevDir()">Up</button>
+
+        <hr>
+
+        <p style = "color:blue">
+            server: <label id="hostname">???</label>
+        </p>
+
+        <p style = "color:green">
+            directory: <label id="dirNameGreen">???</label>
+        </p>
+        
+        <directory_list>
+            <div id ="dirTable">
+                
+            <file>
+                <filename class="heading">filename</filename>
+                <type class="heading">type</type>
+                <size class="heading">size (bytes)</size>
+                <atime class="heading">atime</atime>
+                <mtime class="heading">mtime</mtime>
+                <ctime class="heading">ctime</ctime>
+                <birthtime class="heading">birthtime</birthtime>
+            </file>
+        
+            </div>
+            
+        </directory_list>
+
+        <hr>
+            <label><input type='checkbox' onclick='handleCheck(this.checked,"type");' checked>type</label>
+            <label><input type='checkbox' onclick='handleCheck(this.checked,"size");' checked>size</label>
+            <label><input type='checkbox' onclick='handleCheck(this.checked,"atime");' checked>atime</label>
+            <label><input type='checkbox' onclick='handleCheck(this.checked,"mtime");' checked>mtime</label>
+            <label><input type='checkbox' onclick='handleCheck(this.checked,"ctime");' checked>ctime</label>
+            <label><input type='checkbox' onclick='handleCheck(this.checked,"birthtime");' checked>birthtime</label>
+
+        <hr>
+    </body>
+</html>
